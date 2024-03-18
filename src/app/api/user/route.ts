@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export default async function GET() {
+export async function GET() {
 
     try {
         await new Promise((resolve, reject) => {
@@ -16,5 +16,9 @@ export default async function GET() {
        console.log("Error ", error);
        
     }
+    
+}
+
+export async function POST(req:NextRequest) {
     
 }
